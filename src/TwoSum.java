@@ -16,10 +16,10 @@ public class TwoSum {
         HashMap<Integer, Integer> map = new HashMap<>();
         for(int i = 0; i < n; i++){
             map.put(a[i], i);
-            for(int j = 0; j < m; j++){
-                if(map.containsKey(target - b[j])){
-                    res.add(Arrays.asList((target - b[j]), b[j]));
-                }
+        }
+        for(int j = 0; j < m; j++){
+            if(map.containsKey(target - b[j])){
+                res.add(Arrays.asList((target - b[j]), b[j]));
             }
         }
         return res;
